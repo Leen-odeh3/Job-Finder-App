@@ -1,0 +1,29 @@
+div {
+    &.mainHeader {
+       
+        div {
+            &.main {
+                a{ text-decoration: none;
+                    h1{
+                        color: white ;
+                       letter-spacing: 2px;
+                    }
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:white;
+                padding: 10px 35px;
+                background-image: url('https://res.cloudinary.com/dll0c6zey/image/upload/v1698314996/bg-pattern-header_rn15kj.jpg');
+                // background-color: #5964e0;
+                box-shadow: 0px 0px 3px 0px gray;
+
+                i {
+                    &.bi-brightness-high-fill {
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }}}

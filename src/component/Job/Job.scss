@@ -1,0 +1,112 @@
+div {
+    &.items {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+
+    }
+
+    &.job-content {
+        position: relative;
+        background-color: white;
+        box-shadow: 0px 0px 3px 0px rgb(209, 208, 208);
+        width: 29%;
+        height: 300px;
+        margin: 30px;
+        border-radius: 10px;
+        padding-top: 60px;
+        padding-left: 30px;
+
+
+        div {
+            &.img {
+                width: 60px;
+                height: 60px;
+                border-radius: 15px;
+                position: absolute;
+                top: -25px;
+                left: 30px;
+            }
+
+            &.info {
+                display: flex;
+                color: rgb(167, 164, 164);
+                font-size: 20px;
+
+                align-items: center;
+
+                span {
+                    font-size: 30px;
+                    padding: 0px 10px;
+
+                }
+            }
+
+            &.title {
+                cursor: pointer;
+
+                h2 {
+                    line-height: 1.8;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                &:hover {
+                    opacity: .6;
+                }
+            }
+
+            &.logo {
+                h4 {
+                    color: rgb(167, 164, 164);
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &.place {
+                h5 {
+                    color: cornflowerblue;
+                    font-size: 23px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:800px ){
+   div.items div.job-content{
+    width:90%;
+    padding-left: 50px;
+    height: 260px;
+    div.img ,div.im img{
+      left:50px;
+    }
+   }
+   div.items{
+    padding: 0px 40px;
+   }
+}
+
+
+
+@media(min-width:810px) and (max-width:1194px ){
+    div.items div.job-content{
+     width:43%;
+     padding-left: 40px;
+     height: 270px;
+     div.img ,div.im img{
+       left:40px;
+     }
+    }
+    div.items{
+     padding: 0px 30px;
+    }
+ }
